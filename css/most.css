@@ -1,0 +1,231 @@
+/* Start global rows */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:root{
+    --main-color:#2196f3;
+    --main-color-alt:#1787e0;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Merriweather', serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style:none;
+    margin: 0; 
+    padding: 0;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container , .h123 {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container , .h123 {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container , .h123 {
+        width: 1170px;
+    }
+}
+/* End */
+/* Start header */
+/* Start Header */
+.header {
+    padding: 20px;
+    box-shadow: #333;
+    --webkit-box-shadow:0 0 40px black;
+    --moz-box-shadow:0 0 40px black;
+    box-shadow:0 0 40px black;
+}
+.colr{
+    background-color: #333;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    width: 60px;
+}
+
+.header .links {
+    position: relative;
+}
+
+.header .links:hover .icon span:nth-child(2) {
+    width: 100%;
+}
+
+.header .links .icon {
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    color: white;
+}
+
+.header .links .icon span {
+    background-color: var(--secondary-color);
+    margin-bottom: 5px;
+    height: 2px;
+}
+
+.header .links .icon span:first-child {
+    width: 100%;
+    height: 1px;
+    background-color: #10cab7;
+}
+
+.header .links .icon span:nth-child(2) {
+    width: 60%;
+    transition: var(--main-duration);
+    background-color: #10cab7;
+}
+
+.header .links .icon span:last-child {
+    width: 100%;
+    height: 2px;
+    background-color: #10cab7;
+}
+
+.header .links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+    position: absolute;
+    right: 0;
+    min-width: 200px;
+    top: calc(100% + 15px);
+    display: none;
+    z-index: 1;
+}
+
+.header .links ul::before {
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #f6f6f6 transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+}
+
+.header .links:hover ul {
+    display: block;
+}
+
+.header .links ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+    transition: var(--main-duration);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.header .links ul li a:hover {
+    padding-left: 25px;
+}
+
+.header .links ul li:not(:last-child) a {
+    border-bottom: 1px solid #ddd;
+}
+
+    .portfolio .portfolio-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(213px, 2fr));
+        grid-gap: 131px;
+        margin-top: 68px;
+        align-items: baseline;
+    }
+    .h123{
+        color: #ebeced;
+        font-size: 75px;
+        text-align: center;
+        font-weight: 800;
+        letter-spacing: 10px;
+        margin: 0;
+        padding-top: 10px;
+    }
+    .portfolio .card {
+        background-color: var(--secondary-color);
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .portfolio .card .tomo {
+        background-color: var(--secondary-color);
+        color: #b3ff4a;
+        text-align: center;
+        text-decoration: none;;
+    }
+    
+    .portfolio .card .prey {
+        background-color: var(--secondary-color);
+        color: #b3ff4a;
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    .portfolio .card .Crawl {
+        background-color: var(--secondary-color);
+        color: #b3ff4a;
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    .portfolio .card img {
+        max-width: 100%;
+    }
+    
+    
+    .portfolio .portfolio-content .info {
+        padding-bottom: 0px;
+        text-align: center;
+        padding-top: 0;
+    }
+    
+    .portfolio .portfolio-content .info h3 {
+        margin: 0;
+        text-align: center;
+        line-height: normal;
+        color: #53b0a6;
+    }
+    
+    .portfolio .portfolio-content .info p {
+        margin: 0;
+        text-align: center;
+        line-height: 2;
+    }
+    
+    /* End Portfolio  */
